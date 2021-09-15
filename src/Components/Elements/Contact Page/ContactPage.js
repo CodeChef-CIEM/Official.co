@@ -4,9 +4,9 @@ import emailjs from "emailjs-com";
 import "./style.css";
 
 const ContactPage = () => {
-  const serviceID = `service_mfk4wyh`;
-  const templateID = `template_6nrsgkm`;
-  const userID = `user_QiAbRw6mex799UYcc4x1H`;
+  const serviceID = `HIDDEN SOURCE`;
+  const templateID = `HIDDEN SOURCE`;
+  const userID = `HIDDEN SOURCE`;
 
   console.log(serviceID);
 
