@@ -1,0 +1,166 @@
+.contact-page-root {
+  height: max-content;
+  width: 100%;
+  background-image: linear-gradient(to top, transparent, black 99%),
+    url("../../../images/earth.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.contact-blur {
+  width: inherit;
+  height: inherit;
+  backdrop-filter: blur(3px);
+}
+.contact-title {
+  font-family: "Open Sans";
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 900;
+  padding: 0;
+  margin-bottom: 1%;
+}
+
+.under-line {
+  width: 80px;
+  height: 3px;
+  background-color: #1cc5dc;
+  margin-top: 0;
+  padding: 0;
+}
+.under-line-2 {
+  width: 40px;
+  height: 3px;
+  background-color: #1cc5dc;
+  margin-top: 0;
+  padding: 0;
+}
+.contact-short-text {
+  width: 60%;
+  font-family: "Open Sans";
+  font-size: 0.8rem;
+  font-weight: 200;
+  color: white;
+}
+.contact-text {
+  width: 60%;
+  font-family: "Open Sans";
+  font-size: 0.9rem;
+  color: white;
+}
+.contact-social-media-sub-holder {
+  display: flex;
+  color: white;
+  padding: 0;
+}
+.footer-icon {
+  font-size: 0.7rem;
+}
+.contact-text-sm {
+  font-family: "Open Sans";
+  font-size: 0.7rem;
+  color: white;
+  margin-top: 0;
+}
+.box-containers {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 2% 0;
+}
+
+.text-box {
+  width: 30%;
+  padding: 1.5% 2.5%;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  font-family: "Open Sans";
+  font-size: 0.8rem;
+  margin-top: 2%;
+}
+.text-box:nth-child(2n) {
+  width: 40%;
+}
+.text-box::placeholder {
+  color: rgba(19, 18, 18, 0.6);
+  font-family: "Open Sans";
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+.message-box {
+  width: 50%;
+  height: 100px;
+  padding: 1.5% 2.5%;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  font-family: "Open Sans";
+  font-size: 0.8rem;
+  margin-top: 2%;
+}
+.message-box::placeholder {
+  color: rgba(19, 18, 18, 0.6);
+  font-family: "Open Sans";
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+.contact-send-button {
+  width: 50%;
+  padding: 2%;
+  margin-top: 2%;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-family: "Open Sans";
+  font-size: 0.8rem;
+  font-weight: 900;
+  color: white;
+  background-color: rgb(27, 27, 27);
+}
+.contact-send-button:hover {
+  background-color: black;
+}
+
+.water-mark {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 0.5rem;
+  color: rgba(255, 255, 255, 0.2);
+  font-family: "Open Sans";
+}
+.water-mark p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 786px) {
+  .contact-short-text{
+    width: 100%;
+    font-size: 0.9rem;
+  }
+  .text-box:nth-child(2n+1) {
+    width: 80%;
+    font-size: 1.0rem;
+  }
+  .text-box:nth-child(2n) {
+    width: 80%;
+    font-size: 1.0rem;
+  }
+  .message-box{
+    width: 80%;
+    font-size: 1.0rem;
+  }
+  .contact-send-button{
+    width: 60%;
+  }
+  .water-mark{
+    font-size: 0.2rem;
+  }
+}

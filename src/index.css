@@ -1,0 +1,24 @@
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+
+  scroll-behavior: smooth;
+  background-color: #03011d;
+  scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar {
+  width: 0.7rem;
+}
+*::-webkit-scrollbar-track {
+  background-color: rgb(224, 224, 224);
+  border-radius: 2px;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #616d7d;
+  border-radius: 20px;
+  border: none;
+}

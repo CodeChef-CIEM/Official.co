@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Staatliches&display=swap");
+
+/* ROOT */
+.page-one-root {
+  width: 100%;
+  height: 110vh;
+  position: relative;
+  background-image: linear-gradient(to bottom, transparent, #03011d 99%),
+    url("../../../images/pageOne_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+/* BODY */
+
+.page-one-body {
+  width: 100%;
+  height: 100%;
+  margin: 0 5%;
+  display: flex;
+  position: relative;
+}
+.page-one-web-element-container {
+  position: absolute;
+  z-index: 0;
+  right: 13.5%;
+  filter: brightness(60%);
+}
+
+.page-one-web-element {
+  width: 800px;
+  height: 500px;
+  z-index: 0;
+  object-fit: cover;
+}
+
+.title-box {
+  position: absolute;
+  z-index: 1;
+  bottom: 20%;
+  left: 10%;
+  overflow: hidden;
+}
+.title-zero {
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  letter-spacing: 10px;
+  position: relative;
+  text-shadow: 4px 4px 2px rgb(26, 25, 25);
+  transform: translateY(1000%);
+  animation: zerotextup 0.3s 0.1s 1 normal ease-in forwards;
+  z-index: 0;
+}
+.title-one {
+  font-size: 6rem;
+  font-family: "Bangers", cursive;
+  color: white;
+  letter-spacing: 5px;
+  text-shadow: 4px 4px 2px rgb(26, 25, 25);
+  margin-top: 0;
+  z-index: 1;
+  transform: translateY(200%);
+  animation: textup 0.5s 0.1s 1 normal ease-in forwards;
+}
+.title-two {
+  font-size: 1.5rem;
+  width: 60%;
+  font-family: "Bangers", cursive;
+  color: white;
+  letter-spacing: 10px;
+  text-shadow: 4px 4px 2px rgb(26, 25, 25);
+  margin-top: 0;
+  z-index: 1;
+}
+@keyframes zerotextup {
+  from {
+    transform: translateY(1000%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+@keyframes textup {
+  from {
+    transform: translateY(200%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes textup2 {
+  from {
+    transform: translateY(200%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .page-one-web-element-container {
+    right:-15%;
+  }
+  .page-one-web-element{
+    width: 500px;
+    height: 500px;
+  }
+  .title-box {
+    bottom: 30%;
+  }
+  .title-one{
+    font-size: 4rem;
+  }
+  .title-two{
+    width: 100%;
+    font-size: 1.2rem;
+  }
+}

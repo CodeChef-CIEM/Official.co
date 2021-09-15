@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
+
+.page3-root {
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5%
+}
+.page-3-heading {
+  position: relative;
+  width: 100%;
+  top: 0;
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.page-3-heading p {
+  font-size: 4rem;
+  font-family: "Bangers", cursive;
+  text-shadow: 4px 4px 2px rgba(235, 233, 233, 0.2);
+  color: white;
+  letter-spacing: 10px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.team-1-root,
+.team-0-root {
+  cursor: pointer;
+}
+#team-root {
+  perspective: 1000px;
+  transition: transform 0.8s ease-in, opacity 1s ease-in;
+}
+
+.team-container {
+  width: 400px;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1.2s ease-in-out;
+  border-radius: 10px;
+  border: 0.5px solid #000;
+}
+.image-cover {
+  position: absolute;
+}
+.team-container:hover .image-cover {
+  width: inherit;
+  height: inherit;
+  background-color: rgba(0, 0, 0, 0.75);
+  transition: background-color 0.8s ease-in-out;
+}
+
+.page3-read-more {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #1cc5dc;
+  z-index: 2;
+  font-family: "Open Sans", -apple-system;
+  font-weight: 900;
+  font-size: 0.8rem;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+.team-container:hover .page3-read-more {
+  opacity: 100%;
+}
+
+.team-image {
+  width: inherit;
+  height: inherit;
+  padding: 0;
+  position: relative;
+  object-fit: cover;
+  display: block;
+  z-index: -1;
+  transition: transform 0.5s ease-in-out;
+}
+.team-container:hover .team-image {
+  transform: scale(105%);
+}
+
+.team-text-box {
+  z-index: 2;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 5%;
+  transform: translateY(100%);
+  transition: transform 0.5s ease-in-out;
+}
+.team-heading {
+  font-size: 0.9rem;
+  font-weight: lighter;
+  font-family: "Open Sans";
+  letter-spacing: 2px;
+  color: rgba(225, 225, 225, 0.5);
+  font-weight: 900;
+}
+.team-caption {
+  font-size: 0.9rem;
+  font-weight: 400;
+  font-family: "Open Sans", -apple-system;
+  word-wrap: break-word;
+  color: white;
+}
+.team-container:hover .team-text-box {
+  transform: translateY(0%);
+}
+.team-year {
+  font-family: "Black Ops One", cursive;
+  color: white;
+  letter-spacing: 5px;
+  font-size: 1.8rem;
+  text-align: center;
+  text-shadow: 4px 4px 2px rgba(235, 233, 233, 0.2);
+}

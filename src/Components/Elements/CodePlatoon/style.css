@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+.event-root {
+  position: relative;
+  background-color: #03011d;
+}
+.event-appbar-section {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.event-heading {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-image: linear-gradient(to bottom, transparent, #03011d 90%),
+    url("../../../images/event_bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.event-title-box {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+}
+.event-title-top {
+  font-family: "Fredoka One", cursive;
+  font-size: 5rem;
+  color: #ffb319;
+  margin-bottom: 0;
+}
+.event-title-bottom {
+  font-family: "Fredoka One", cursive;
+  font-size: 5rem;
+  color: #fff;
+  margin-top: 0;
+}
+.event-sub-title-box {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.event-sub-title-date {
+  font-family: "Fredoka One", cursive;
+  font-size: 2rem;
+  word-spacing: 5px;
+  color: #f037a5;
+  margin-bottom: 5px;
+}
+.event-sub-title-destination {
+  font-family: "Open Sans";
+  font-size: 1rem;
+  word-spacing: 2px;
+  color: #fff;
+  margin-top: 0;
+}
+.event-sub-title-register-button {
+  width: 150px;
+  font-family: "Open Sans";
+  font-weight: 900;
+  font-size: 0.8rem;
+  padding: 3% 5%;
+  text-transform: uppercase;
+  color: #ffb319;
+  border: 1px solid #ffb319;
+  background-color: transparent;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+.event-sub-title-register-button:hover {
+  background-color: #ffb319;
+  color: white;
+}
+
+/* BODY */
+.about-event-box {
+  padding: 5%;
+}
+.about-event {
+  font-family: "Fredoka One", cursive;
+  font-size: 4rem;
+  color: #fff;
+  margin-top: 0;
+  text-align: center;
+}
+.about-event-text {
+  width: 50%;
+  font-family: "Open Sans", -apple-system;
+  font-size: 1rem;
+  color: #fff;
+  margin-top: 0;
+  text-align: left;
+  letter-spacing: 2px;
+}
+.element-box-1,
+.element-box-2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.notice-title {
+  font-family: "Fredoka One", cursive;
+  font-size: 4rem;
+  color: #fff;
+  margin-top: 0;
+  text-align: center;
+}
+.content-2 {
+  width: 80%;
+  font-family: "Open Sans", -apple-system;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 0;
+  text-align: left;
+  letter-spacing: 2px;
+}
+.platoon-element {
+  height: 500px;
+  width: 500px;
+  border-radius: 10px;
+}
+.platoon-element-2{
+  height: 500px;
+  width: 400px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 786px) {
+  .event-title-box {
+    top: 10%;
+    left: 5%;
+  }
+  .event-sub-title-destination {
+    text-align: right;
+  }
+  .about-event-text {
+    width: 100%;
+  }
+  .element-box-1,.element-box-2 {
+    display: block;
+  }
+  .content-2 {
+    width: 100%;
+  }
+  .platoon-element,.platoon-element-2 {
+    width: 100%;
+    height: 100%;
+  }
+}
