@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import bg1 from "../../../images/ZZ74.jpg";
+import { useHistory } from "react-router";
 import "./style.css";
 
 const PageTwo = () => {
+  const history = useHistory();
   const [mobileScreen, setMobileScreen] = useState(false);
   useEffect(() => {
     if (window.innerWidth <= 786) {
@@ -42,8 +44,8 @@ const PageTwo = () => {
                 className="event-details-button-odd"
                 onClick={(e) => {
                   e.preventDefault();
-                  // history.push("/events/platoon");
-                  window.open("/events/platoon");
+                  history.push("/events/platoon");
+                  // window.open("/events/platoon");
                 }}
               >
                 Learn More
