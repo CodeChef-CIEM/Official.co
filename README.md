@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+THE OFFICIAL URL OF THE CIEM CODE CHEF CHAPTER IS https://codechef-ciem-chapter.netlify.app
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
