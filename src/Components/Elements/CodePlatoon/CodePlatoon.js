@@ -1,5 +1,4 @@
 import React from "react";
-import { useHistory } from "react-router";
 import element1 from "../../../images/event-page-element1.jpg";
 import element2 from "../../../images/event-page-element2.jpg";
 import Appbar from "../Appbar/Appbar";
@@ -8,8 +7,6 @@ import ContactPage from "../Contact Page/ContactPage";
 import "./style.css";
 
 const CodePlatoon = () => {
-  const history = useHistory();
-  console.log(history.location);
   return (
     <div className="event-root">
       <section className="event-heading">

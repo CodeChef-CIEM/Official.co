@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Grow } from "@material-ui/core";
 import team1 from "../../../images/team1.jpg";
 import team2 from "../../../images/team2.jpg";
 import { useHistory } from "react-router";
@@ -7,7 +6,7 @@ import "./style.css";
 
 const Page3 = () => {
   const history = useHistory();
-  const [scrolling, setScrolling] = useState(false);
+  // const [scrolling, setScrolling] = useState(false);
   const [view, setView] = useState(false);
   const [mobileScreen, setMobileScreen] = useState(false);
   useEffect(() => {
@@ -18,7 +17,7 @@ const Page3 = () => {
     }
   }, []);
 
-  console.log(document);
+
 
   const isInViewPort = () => {
     const rect = document.querySelector(".team-0-root").getBoundingClientRect();

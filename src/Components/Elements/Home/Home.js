@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import PageOne from "../Page_1/PageOne";
 import PageTwo from "../Page2/PageTwo";
 import PageThree from "../page 3/PageThree";

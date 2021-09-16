@@ -18,23 +18,23 @@ const PageTwo = () => {
       <img className="page-2-bg" src={bg1} alt="bg" />
       <section id="event-container">
         <div className="page-2-heading-container">
-          <h1 class="section-heading mb75px">Events</h1>
+          <h1 className="section-heading mb75px">Events</h1>
           <div
             className="under-line-2"
             style={mobileScreen ? { width: "30%" } : { width: "10%" }}
           ></div>
         </div>
 
-        <div class="timeline">
-          <div class="timeline-box" id="timeline-box">
-            <h3 id="number-1" class="number">
+        <div className="timeline">
+          <div className="timeline-box" id="timeline-box">
+            <h3 id="number-1" className="number">
               01
             </h3>
-            <h3 id="name-1" class="name">
+            <h3 id="name-1" className="name">
               Code Platoon
             </h3>
             <div className="detail-box">
-              <p class="details">
+              <p className="details">
                 Code Platoon is a Bootcamp program which is organised by
                 Calcutta Institute of Engineering and Management and CodeChef
                 CIEM Chapter. The following are the dates and important events
@@ -52,17 +52,17 @@ const PageTwo = () => {
               </button>
             </div>
           </div>
-          <div class="timeline-box" id="timeline-box">
-            <h3 id="number-2" class="number">
+          <div className="timeline-box" id="timeline-box">
+            <h3 id="number-2" className="number">
               02
             </h3>
 
-            <h3 id="name-2" class="name">
+            <h3 id="name-2" className="name">
               CodeVita
             </h3>
 
             <div className="detail-box">
-              <p class="details">
+              <p className="details">
                 Anonline coding contest, “CodeVita” was organized by members of
                 the CodeChef CIEM Chapter for the 2nd, 3rd, and 4th-year
                 students from all the departments of Calcutta Institute of
@@ -83,15 +83,15 @@ const PageTwo = () => {
               </button>
             </div>
           </div>
-          <div class="timeline-box">
-            <h3 id="number-3" class="number">
+          <div className="timeline-box">
+            <h3 id="number-3" className="number">
               03
             </h3>
-            <h3 id="name-3" class="name">
+            <h3 id="name-3" className="name">
               Intro to Competitive Programming
             </h3>
             <div className="detail-box">
-              <p class="details">
+              <p className="details">
                 Awebinar on “Introduction to Competitive Programming” was
                 organized by members of the CodeChef CIEM Chapter on 23rd of
                 December 2020, Wednesday around 6 pm for the 2nd, 3rd, and
@@ -112,14 +112,14 @@ const PageTwo = () => {
             </div>
           </div>
           <div id="timeline-divider">
-            <div class="timeline-traveller">
-              <i class="fas fa-plane"></i>
+            <div className="timeline-traveller">
+              <i className="fas fa-plane"></i>
             </div>
           </div>
         </div>
-        <div class="read-more">
+        <div className="read-more">
           <p>Read More</p>
-          <i class="fas fa-arrow-right"></i>
+          <i className="fas fa-arrow-right"></i>
         </div>
       </section>
     </div>

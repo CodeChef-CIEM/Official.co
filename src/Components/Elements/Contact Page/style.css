@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 .contact-page-root {
   height: max-content;
   width: 100%;
@@ -10,7 +11,7 @@
 .contact-blur {
   width: inherit;
   height: inherit;
-  backdrop-filter: blur(3px);
+  position: relative;
 }
 .contact-title {
   font-family: "Open Sans";
@@ -127,40 +128,37 @@
   background-color: black;
 }
 
-.water-mark {
-  position: absolute;
+.watermark-text {
+  width: 100%;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 200;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: sans-serif;
   bottom: 0;
-  right: 0;
-  font-size: 0.5rem;
-  color: rgba(255, 255, 255, 0.2);
-  font-family: "Open Sans";
-}
-.water-mark p {
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 @media screen and (max-width: 786px) {
-  .contact-short-text{
+  .contact-short-text {
     width: 100%;
     font-size: 0.9rem;
   }
-  .text-box:nth-child(2n+1) {
+  .text-box:nth-child(2n + 1) {
     width: 80%;
-    font-size: 1.0rem;
+    font-size: 1rem;
   }
   .text-box:nth-child(2n) {
     width: 80%;
-    font-size: 1.0rem;
+    font-size: 1rem;
   }
-  .message-box{
+  .message-box {
     width: 80%;
-    font-size: 1.0rem;
+    font-size: 1rem;
   }
-  .contact-send-button{
+  .contact-send-button {
     width: 60%;
   }
-  .water-mark{
-    font-size: 0.2rem;
+  .watermark-text {
+    font-size: 0.7rem;
   }
 }

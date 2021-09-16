@@ -1,23 +1,24 @@
 import { Divider, Grid } from "@material-ui/core";
-import React from "react";
+import React, { useState } from "react";
+import keys from "../../../Helper";
+import dotenv from "dotenv";
 import emailjs from "emailjs-com";
 import "./style.css";
-
+dotenv.config();
 const ContactPage = () => {
-  const serviceID = `service_mfk4wyh`;
-  const templateID = `template_6nrsgkm`;
-  const userID = `user_QiAbRw6mex799UYcc4x1H`;
-
-  console.log(serviceID);
+  const [formDetails, setFormDetails] = useState({
+    user_name: "",
+    user_email: "",
+    message: "",
+  });
 
   const sendEmail = (e) => {
-    e.preverntDefault();
-    console.log(e.target);
+    e.preventDefault();
+    emailjs.init(keys.user_ID);
     emailjs
-      .sendForm(serviceID, templateID, e.target, userID)
+      .send(keys.serviceID, keys.template_ID, formDetails)
       .then(() => alert("Message Sent!"))
-      .catch((err) => console.log(err.message));
-    e.target.reset();
+      .catch((err) => console.log(err));
   };
 
   return (
@@ -66,13 +67,14 @@ const ContactPage = () => {
                 </p>
               </div>
             </div>
+
             <Divider
               orientation="vertical"
               style={{ backgroundColor: "white", height: "50%", width: "3px" }}
             />
           </Grid>
 
-          <Grid xs={12} sm={6} style={{ paddingTop: "2%" }}>
+          <Grid item xs={12} sm={6} style={{ paddingTop: "2%" }}>
             <div
               className="contact-right"
               style={{ marginLeft: "5%", position: "relative" }}
@@ -81,14 +83,7 @@ const ContactPage = () => {
               <div className="under-line"></div>
               <div className="box-containers">
                 <form
-                  onSubmit={(e) => {
-                    e.preventDefault();
-                    emailjs
-                      .sendForm(serviceID, templateID, e.target, userID)
-                      .then(() => alert("Message Sent!"))
-                      .catch((err) => console.log(err.message));
-                    e.target.reset();
-                  }}
+                  onSubmit={sendEmail}
                   style={{
                     width: "100%",
                     display: "flex",
@@ -100,30 +95,49 @@ const ContactPage = () => {
                     name="user_name"
                     className="text-box"
                     placeholder="Name"
+                    value={formDetails.user_name}
+                    onChange={(e) =>
+                      setFormDetails({
+                        ...formDetails,
+                        user_name: e.target.value,
+                      })
+                    }
                   />
                   <input
                     name="user_email"
                     className="text-box"
                     placeholder="Email"
+                    value={formDetails.user_email}
+                    onChange={(e) =>
+                      setFormDetails({
+                        ...formDetails,
+                        user_email: e.target.value,
+                      })
+                    }
                   />
                   <textarea
                     name="message"
                     className="message-box"
                     placeholder="Message"
+                    value={formDetails.message}
+                    onChange={(e) =>
+                      setFormDetails({
+                        ...formDetails,
+                        message: e.target.value,
+                      })
+                    }
                   />
                   <button className="contact-send-button" type="submit">
                     Send Message
                   </button>
                 </form>
               </div>
-              <div className="water-mark">
-                <p className="watermark-text">Developed By</p>
-                <p className="watermark-text">Hrishikesh Ghosh And,</p>
-                <p className="watermark-text">Debarghya Dutta</p>
-              </div>
             </div>
           </Grid>
         </Grid>
+        <p className="watermark-text">
+          Developed with &hearts; by Hrishikesh Ghosh and Debarghya Dutta
+        </p>
       </div>
     </div>
   );

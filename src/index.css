@@ -4,7 +4,8 @@
 
 body {
   overflow-x: hidden;
-
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
   scroll-behavior: smooth;
   background-color: #03011d;
   scroll-behavior: smooth;

@@ -10,7 +10,7 @@ const Appbar = () => {
 
   useEffect(() => {
     const screenWidth = window.innerWidth;
-    console.log(screenWidth);
+
     if (screenWidth <= 786) {
       setIsmobileScreen(true);
     } else {
@@ -22,8 +22,6 @@ const Appbar = () => {
     e.preventDefault();
     window.open(link);
   };
-
-  console.log(document.body.style.overflowY);
 
   const routeTopage = (e, routeName) => {
     e.preventDefault();
@@ -65,7 +63,7 @@ const Appbar = () => {
             }}
           >
             <i
-              class="fas fa-times"
+              className="fas fa-times"
               style={{ fontSize: "1.5rem", color: "white" }}
             ></i>
           </IconButton>
@@ -169,7 +167,7 @@ const Appbar = () => {
               }}
             >
               <i
-                class="fas fa-bars"
+                className="fas fa-bars"
                 style={{ color: "white", fontSize: "1.5rem" }}
               ></i>
             </IconButton>
